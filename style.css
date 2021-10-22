@@ -5,7 +5,7 @@ body{
     background: #36D1DC;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    overflow-x:hidden;
 }
 :root{
     --font-titles:  'Ubuntu', sans-serif;
@@ -217,10 +217,10 @@ div ul li img{
     height: 190px;
     margin-top: 150px;
     margin-right: 37%;
-    background-color: #006eff;
+    
     border: solid 10px #fbff00 ;
     float:right;
-    position: flex;
+    
 }
 
 .blocoF >div >p{
@@ -245,8 +245,6 @@ div ul li img{
     background-color: #fbff00;
     float: right;
     position: relative;
-    
-
 }
 .blocoG2{
     width:500px;
@@ -274,6 +272,7 @@ div ul li img{
 }
 
 .footTxt{
+    margin-left: 27%;
     font-size: 20px;
     text-align: left;
     color: rgb(0, 0, 0);
