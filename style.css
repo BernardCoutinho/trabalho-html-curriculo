@@ -1,8 +1,15 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 body{
     background: #36D1DC;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+:root{
+    --font-titles:  'Ubuntu', sans-serif;
+    --font-txt:'Source Sans Pro', sans-serif;
 }
 .topTitulo{
   display:flex;
@@ -12,12 +19,14 @@ body{
   align-items: center;
   font-size: 60px;
   color: aliceblue;
+  font-family: var(--font-titles);
   
  
 }
 
 .subtopicos{
     
+    font-family: var(--font-titles);
     margin-left: 5px;
     font-size: 20px;
     color: aliceblue;
@@ -29,7 +38,9 @@ body{
 
 
 
+
 .sobreMim-text{
+    font-family: var(--font-txt);
     width:400px;
     height: 400px;
     text-align:left;
@@ -60,6 +71,7 @@ body{
 }
 
 .objetivos-text{
+    font-family: var(--font-txt);
     width:400px;
     height: 300px;
     text-align:left;
@@ -118,7 +130,7 @@ body{
     width: 500px;
     height: 400px;
     margin-top: 100px;
-    margin-left: 100px;
+    margin-left: 50px;
     background-color: #fbff00;
     border:solid 5px #cace13;
     float: left;
@@ -130,14 +142,14 @@ body{
     width: 500px;
     height: 400px;
     margin-top: 100px;
-    margin-right: 100px;
+    margin-right: 50px;
     background-color: #006eff;
     float: right;
     position: relative;
     border:solid 5px #0560d8;
 }
 .backTitleTxt{
-    
+    font-family: var(--font-titles);
     font-size: 30px;
     text-align: center;
     color: rgb(0, 0, 0);
@@ -168,7 +180,7 @@ div ul li img{
     width: 50%;
 }
 .frontTitleTxt{
-    
+    font-family: var(--font-titles);
     font-size: 30px;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -195,28 +207,102 @@ div ul li img{
     width: 190px;
 }
 
-.blocoF1{
+
+
+.blocoF{
+    font-family: var(--font-titles);
+    color: white;
     clear: both;
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    height: 190px;
     margin-top: 150px;
-    margin-left: 600px;
-    background-color: #fbff00;
-    float: left;
-    position: relative;
-}
-
-.blocoF2{
-    width:200px;
-    height: 100px;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-right: 37%;
     background-color: #006eff;
+    border: solid 10px #fbff00 ;
+    float:right;
+    position: flex;
+}
+
+.blocoF >div >p{
     float: left;
-    position: absolute; 
+    margin-left: 30%;
+    margin-top: 10%;
+    display:flex;
+    flex-direction: column;
+}
+
+.blocoF >div >p >a >i{
+    font-size: 120px;
+    color:rgb(255, 253, 253);
 }
 
 
+.blocoG1{
+    width:500px;
+    height: 600px;
+    margin-right:25px;
+    margin-top: 40px;
+    background-color: #fbff00;
+    float: right;
+    position: relative;
+    
 
+}
+.blocoG2{
+    width:500px;
+    height: 600px;
+    margin-right:10px;
+    margin-top: 10px;
+    background-color: #006eff;
+    float: right;
+}
 
+.blocoH{
+    clear: both;
+    width: 100%;
+    height:30vh;
+    margin-top: 30px;
+    background-color: #006eff;
+    float:right;
+    position:relative;
+}
 
+.footTitleTxt{
+    font-family: var(--font-titles);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.footTxt{
+    font-size: 20px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    position:absolute;
+    width: 100%;
+}
+
+.footTxt ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position:absolute;
+    margin:10px;
+}
+.footTxt ul > li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin: 20px;
+}
+
+li > a > i{
+    font-size: 40px;
+    color:rgb(255, 253, 253);
+}
+
+ul > img{
+    width:100%;
+}
