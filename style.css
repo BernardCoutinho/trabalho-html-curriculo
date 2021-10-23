@@ -1,6 +1,13 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+*{
+    margin: 0 auto;
+    padding-left: 0;
+    box-sizing: border-box;
+    
+}
 body{
     background: #36D1DC;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
@@ -15,119 +22,87 @@ body{
 
 .topTitulo{
   display:flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 100px;
-  align-items: center;
-  font-size: 60px;
+  width:1000px;
+  border: solid 10px #fbff00; ;
+  margin-top: 80px;
+  font-size: 30px;
   color: aliceblue;
   font-family: var(--font-titles);
 }
 
-.subtopicos{
-    
-    font-family: var(--font-titles);
-    margin-left: 5px;
-    font-size: 20px;
-    color: aliceblue;
-    text-align: center;   
-}
+
 
 .sobreMim-text{
     font-family: var(--font-txt);
     width:400px;
-    height: 400px;
-    text-align:left;
-    position: absolute;
-    margin-left: 50px;
+    text-align:center;
     font-size: 20px;
     color: white;
-}
-
-.blocoA1{
-    width:500px;
-    height: 500px;
-    margin-left: 15px;
-    margin-top: 150px;
-    background-color: #fbff00;
-    position:relative;
-    float:left;
-    
-}
-.blocoA2{
-    width:500px;
-    height: 500px;
-    margin-left:25px;
-    margin-top: 140px;
     background-color: #006eff;
+    border: solid 10px #006eff;
+    box-shadow: -10px -10px #fbff00;
     position: absolute;
-    float: left;
+    top: 60%;
+    right: 60%;
+    
 }
 
 .objetivos-text{
     font-family: var(--font-txt);
     width:400px;
-    height: 300px;
-    text-align:left;
-    position: absolute;
-    z-index: 3;
-    margin-left:10px;
+    text-align: center;
     font-size: 20px;
     color: white;
-    clear: both;
-}
-.objetivos-text >div{
-    margin-left: 30px;
-}
-
-.blocoB1{
-    width:500px;
-    height: 300px;
-    margin-right:25px;
-    margin-top: 40px;
-    background-color: #fbff00;
-    float: right;
-}
-.blocoB2{
-    width:500px;
-    height: 300px;
-    margin-right:20px;
-    margin-top: 50px;
-    background-color: #006eff;
-    float: right;
-    top: 23rem;
-    right: 2rem;
+    background-color:#006eff;
+    border: solid 10px #006eff;
+    box-shadow: 10px -10px #fbff00;
+    float:right;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    
     
 }
 
-.blocoC1{
-    clear: both;
-    width: 300px;
-    height: 100px;
-    margin-top: 150px;
-    margin-left: 500px;
-    background-color: #fbff00;
-    float: left;
+.infoPessoais{
+    font-family: var(--font-txt);
+    width:400px;
+    text-align: left;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color:#006eff;
+    border: solid 10px #006eff;
+    box-shadow: 10px 10px #fbff00;
     position: relative;
+    float: right;
+    margin-top: 30%;
+    margin-right: 10%;
 }
-
-.blocoC2{
-    width:300px;
-    height: 100px;
-    margin-top: 10px;
-    margin-left: 10px;
-    background-color: #006eff;
+.formacoesTxt{
+    font-family: var(--font-txt);
+    width:400px;
+    text-align:left;
+    font-size: 20px;
+    color: white;
+    background-color:#006eff;
+    border: solid 10px #006eff;
+    box-shadow: -10px 10px #fbff00;
+    position: relative;
     float: left;
-    position: absolute; 
-    
+    margin-top: 50%;
+    margin-left: 15%;
 }
-
+section h2{
+    text-align: center;
+}
 .blocoD{
     clear: both;
     width: 500px;
     height: 400px;
-    margin-top: 100px;
+    margin-top: 30px;
     margin-left: 50px;
     background-color: #fbff00;
     border:solid 5px #cace13;
@@ -139,7 +114,7 @@ body{
    
     width: 500px;
     height: 400px;
-    margin-top: 100px;
+    margin-top: 30px;
     margin-right: 50px;
     background-color: #006eff;
     float: right;
@@ -149,6 +124,7 @@ body{
 .backTitleTxt{
     font-family: var(--font-titles);
     font-size: 30px;
+    margin: 10px ;
     text-align: center;
     color: rgb(0, 0, 0);
 }
@@ -160,28 +136,33 @@ body{
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: row;
-    
-
 }
+
 .backTxt ul{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 .backTxt ul > li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 180px;
+    width: 190px;
+    margin: 5px;
 }
 div ul li img{
-    width: 50%;
+    width: 60%;
+}
+#mongo{
+    width: 80%;
 }
 .frontTitleTxt{
     font-family: var(--font-titles);
     font-size: 30px;
     text-align: center;
     color: rgb(255, 255, 255);
+    margin: 10px;
 }
 
 .frontTxt{
@@ -191,6 +172,7 @@ div ul li img{
     color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
+    margin: 10px;
 }
 
 .frontTxt ul{
@@ -202,7 +184,8 @@ div ul li img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 190px;
+    width: 200px;
+    margin: 6px;
 }
 
 
@@ -213,12 +196,11 @@ div ul li img{
     clear: both;
     width: 300px;
     height: 190px;
-    margin-top: 150px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     margin-right: 37%;
-    
     border: solid 10px #fbff00 ;
     float:right;
-    
 }
 
 .blocoF >div >p{
@@ -234,56 +216,38 @@ div ul li img{
     color:rgb(255, 253, 253);
 }
 
-
-.blocoG1{
-    width:500px;
-    height: 600px;
-    margin-right:25px;
-    margin-top: 40px;
-    background-color: #fbff00;
-    float: right;
-    position: relative;
-}
-.blocoG2{
-    width:500px;
-    height: 600px;
-    margin-right:10px;
-    margin-top: 10px;
-    background-color: #006eff;
-    float: right;
-}
-
 .blocoH{
     clear: both;
     width: 100%;
     height:30vh;
-    margin-top: 30px;
     background-color: #006eff;
     float:right;
     position:relative;
+    
 }
 
 .footTitleTxt{
+    
     font-family: var(--font-titles);
     text-align: center;
     color: rgb(255, 255, 255);
+    margin-top: 10px;
 }
 
 .footTxt{
-    margin-left: 27%;
+    font-family:--font-txt;
+    justify-content: center;
     font-size: 20px;
-    text-align: left;
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: row;
-    position:absolute;
+    position: relative;
     width: 100%;
 }
 
 .footTxt ul{
     display: flex;
     flex-direction: row;
-    align-items: center;
     position:absolute;
     margin:10px;
 }
@@ -293,6 +257,7 @@ div ul li img{
     align-items: center;
     width: 25%;
     margin: 20px;
+    color:rgb(255, 253, 253);
 }
 
 li > a > i{
@@ -302,4 +267,26 @@ li > a > i{
 
 ul > img{
     width:100%;
+}
+
+ul{
+    list-style-type: none;
+    font-family:--font-txt;
+}
+
+.minhaHabTxt{
+    margin:0%;
+    margin-top: 72%;
+    margin-left: 25%;
+    margin-bottom: 2%;
+    font-size: 20px;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    background-color: #006eff;
+    border: solid 10px #006eff;
+    box-shadow: -10px -10px #fbff00;
+    font-family: var(--font-titles);
+    color: rgb(255, 255, 255);
 }
